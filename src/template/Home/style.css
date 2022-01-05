@@ -1,0 +1,7 @@
+.Header {
+    position: fixed;
+    top: 15px;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(243,243,243);
+}
