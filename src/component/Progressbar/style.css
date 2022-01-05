@@ -1,0 +1,14 @@
+.progressbarWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block {
+    width: 10px;
+    height: 10px;
+    content: ' ';
+    display: hidden;
+}
