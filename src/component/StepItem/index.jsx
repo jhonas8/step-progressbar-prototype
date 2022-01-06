@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './style.css'
 
-export default class SetepItem extends Component {
+export default class StepItem extends Component {
     render() {
         const {
             actualStep,
@@ -10,10 +10,11 @@ export default class SetepItem extends Component {
             stepLabel,
         } = this.props
 
+        const activeStep = actualStep === stepIndex
         return (
-            <div className='stepItem'>
+            <div className={`stepItem ${activeStep ? 'activeStep' : ''}` }>
                 <div 
-                    className="stepCircle" 
+                    className={`stepCircle`}
                     onClick={()=>onClickStep(stepIndex)}>
                         {stepIndex}
                     </div>
